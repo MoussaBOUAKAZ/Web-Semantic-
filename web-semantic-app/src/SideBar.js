@@ -1,43 +1,34 @@
 import "./App.css";
 import SideBarItem from "./SideBarItem";
+import { useState } from "react";
 
 function SideBar() {
   const [activeIndex, setActiveIndex] = useState(null);
+
   const handleItemClick = (index) => {
     setActiveIndex(index);
   };
+
+  const items = [
+    { IconLink: "importer.png", Label: "Import 1" },
+    { IconLink: "importer.png", Label: "Import 2" },
+    { IconLink: "importer.png", Label: "Import 3" },
+    { IconLink: "importer.png", Label: "Import 4" },
+    { IconLink: "importer.png", Label: "Import 5" },
+    { IconLink: "importer.png", Label: "Import 6" },
+  ];
+
   return (
-    <div className="SideBar">
-      <SideBarItem
-        IconLink="importer.png"
-        Label="Import"
-        onClick={() => handleItemClick(index)}
-      />
-      <SideBarItem
-        IconLink="importer.png"
-        Label="Import"
-        onClick={() => handleItemClick(index)}
-      />
-      <SideBarItem
-        IconLink="importer.png"
-        Label="Import"
-        onClick={() => handleItemClick(index)}
-      />
-      <SideBarItem
-        IconLink="importer.png"
-        Label="Import"
-        onClick={() => handleItemClick(index)}
-      />
-      <SideBarItem
-        IconLink="importer.png"
-        Label="Import"
-        onClick={() => handleItemClick(index)}
-      />
-      <SideBarItem
-        IconLink="importer.png"
-        Label="Import"
-        onClick={() => handleItemClick(index)}
-      />
+    <div className="SideBar" >
+      {items.map((item, index) => (
+        <SideBarItem
+          key={index}
+          IconLink={item.IconLink}
+          Label={item.Label}
+          isActive={activeIndex === index}      
+          onClick={() => handleItemClick(index)}
+        />
+      ))}
     </div>
   );
 }

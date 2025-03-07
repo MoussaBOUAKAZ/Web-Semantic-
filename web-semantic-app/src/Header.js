@@ -1,21 +1,17 @@
 import { useState } from "react";
-import "./App.css";
 
-function Header() {
-    const [SideBarToggle,useSideBarToggle]=useState(false)
-    const SideBarClickHandler= ()=>{
-        useSideBarToggle(!SideBarToggle)
-    }
+function Header({ showSideBar }) {
   return (
     <header className="App-header">
       <img
-      src="./SideBarIcon.png" style={{width:'25px', height:'25px'}} 
-      onClick={SideBarClickHandler} >
-      </img>
+        src="./SideBarIcon.png"
+        style={{ width: "25px", height: "25px", cursor: "pointer" }}
+        onClick={showSideBar}
+        alt="Sidebar Toggle"
+      />
       <p>
         Edit <code>src/App.js</code> and save to reload.
       </p>
-      
     </header>
   );
 }
