@@ -10,7 +10,7 @@ function Header({ showSideBar }) {
         alt="Sidebar Toggle"
       />
       <p>
-        Edit <code>src/App.js</code> and save to reload.
+        Explore Your Graphe
       </p>
     </header>
   );
