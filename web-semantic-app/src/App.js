@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header showSideBar={toggleSideBar} />
-      {SideBarToggle && <SideBar />}
+      <SideBar classes={`SideBar ${SideBarToggle ? "active" : ""}`} />
     </div>
   );
 }

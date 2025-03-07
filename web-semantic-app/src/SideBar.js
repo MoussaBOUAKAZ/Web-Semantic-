@@ -2,7 +2,7 @@ import "./App.css";
 import SideBarItem from "./SideBarItem";
 import { useState } from "react";
 
-function SideBar() {
+function SideBar( {classes}) {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleItemClick = (index) => {
@@ -19,7 +19,7 @@ function SideBar() {
   ];
 
   return (
-    <div className="SideBar" >
+    <div className={classes} >
       {items.map((item, index) => (
         <SideBarItem
           key={index}
