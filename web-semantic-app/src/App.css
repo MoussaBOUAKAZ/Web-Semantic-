@@ -12,16 +12,18 @@
   gap: 30px;
   justify-content: start;
   font-size: calc(10px + 1vmin);
+  flex: 1;
+  width: 100%;
 }
 
 .SideBar {
   background-color: #282c34;
   min-height: calc(100vh - 50px);
-  width: 260px;
+  width: 270px;
   border-top: 1px solid #fcfcfc;
   box-sizing: border-box;
   padding: 10px;
-  overflow-y: auto;
+  overflow-y: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,4 +56,41 @@
 .SideBarItem img {
   width: 20;
   height: 20px;
+}
+.QuerySpace {
+  width: 700px;
+  height: 300px;
+  padding: 10px;
+  margin: 15px 0 0 15px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+.QuerySpace textarea {
+  width: 500px;
+  height: 100px;
+
+  color: #000;
+  border: 1px solid;
+  border-radius: 8px;
+  resize: none;
+  white-space: pre-wrap;
+}
+
+.QueryActions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.QueryActions button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.QueryActions button:hover {
+  background-color: #0056b3;
 }
