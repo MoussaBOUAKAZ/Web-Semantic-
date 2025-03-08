@@ -15,7 +15,7 @@ function SideBar({ classes, showQueryStructure }) {
     { IconLink: "importer.png", Label: "Import Graphe", query: "" },
     { IconLink: "importer.png", Label: "Import 2", query: "" },
     { IconLink: null, Label: "Query Tools", query: "" },
-    { IconLink: "openqueyIcon.png", Label: "Open Query", query: "" },
+    { IconLink: "openqueyIcon.png", Label: "Open Query", query: "s" },
     {
       IconLink: "readQueryIcon.png",
       Label: "SELECT Query",

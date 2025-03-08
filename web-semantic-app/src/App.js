@@ -9,7 +9,6 @@ function App() {
   const toggleSideBar = () => {
     setSideBarToggle((prev) => !prev);
   };
-  const [text, setText] = useState("Hello, this is default text!");
 
   const handleChange = (event) => {
     setQueryStructure(event.target.value);
@@ -17,6 +16,9 @@ function App() {
 
   const dispalyQuery = (Query) => {
     setQueryStructure(Query);
+  };
+  const executeQuery = () => {
+    // ajouter une logique pour ca
   };
   return (
     <div className="App">
@@ -26,14 +28,25 @@ function App() {
           classes={`SideBar ${SideBarToggle ? "active" : ""}`}
           showQueryStructure={dispalyQuery}
         />
-        <div className="QuerySpace">
+        <div className={`QuerySpace ${queryStructure ? "show" : ""}`}>
           <textarea value={queryStructure} onChange={handleChange}></textarea>
 
           <div className="QueryActions">
-            <button>Run Query</button>
+            <button onClick={executeQuery}>Run Query</button>
             <button onClick={() => setQueryStructure("")}>Reset</button>
           </div>
         </div>
+
+        {/* {Boolean(queryStructure)   && (
+          <div className="QuerySpace show">
+            <textarea value={queryStructure} onChange={handleChange}></textarea>
+
+            <div className="QueryActions">
+            <button onClick={executeQuery}>Run Query</button>
+              <button onClick={() => setQueryStructure("")}>Reset</button>
+            </div>
+          </div>
+        )} */}
       </div>
     </div>
   );
