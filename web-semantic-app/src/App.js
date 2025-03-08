@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./Header";
 import SideBar from "./SideBar";
-import QueryIndex from "./QueryIndex";
 function App() {
   const [SideBarToggle, setSideBarToggle] = useState(true);
   const [queryStructure, setQueryStructure] = useState("");
