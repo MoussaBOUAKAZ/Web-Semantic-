@@ -17,7 +17,7 @@
 .SideBar {
   background-color: #282c34;
   min-height: calc(100vh - 50px);
-  width: 220px;
+  width: 260px;
   border-top: 1px solid #fcfcfc;
   box-sizing: border-box;
   padding: 10px;

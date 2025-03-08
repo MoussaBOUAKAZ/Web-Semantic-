@@ -11,13 +11,27 @@ function SideBar({ classes }) {
 
   const items = [
     { IconLink: null, Label: "Data Service" },
-    { IconLink: "importer.png", Label: "Import 1" },
+    { IconLink: "importer.png", Label: "Import Graphe" },
     { IconLink: "importer.png", Label: "Import 2" },
-    { IconLink: null, Label: "Tools" },
-    { IconLink: "importer.png", Label: "Import 3" },
-    { IconLink: "importer.png", Label: "Import 4" },
-    { IconLink: "importer.png", Label: "Import 5" },
-    { IconLink: "importer.png", Label: "Import 6" },
+    { IconLink: null, Label: "Query Tools" },
+    { IconLink: "openqueyIcon.png", Label: "Open Query" },
+    { IconLink: "readQueryIcon.png", Label: "SELECT Query" },
+    { IconLink: "askIcon.png", Label: "ASK Query" },
+    { IconLink: "constructIcon.png", Label: "CONSTRUCT Query" },
+    { IconLink: "describeIcon.png", Label: "DESCRIBE Query" },
+    { IconLink: "insertIcon.png", Label: "INSERT Query" },
+    { IconLink: "deleteIcon.png", Label: "DELETE Query" },
+    { IconLink: "deleteIcon.png", Label: "DELETE WHERE Query" },
+    { IconLink: "insertIcon.png", Label: "INSERT WHERE Query" },
+    { IconLink: "insertIcon.png", Label: "DELETE + INSERT Query" },
+    { IconLink: "insertIcon.png", Label: "INSERT INTO GRAPH Query" },
+    { IconLink: "deleteIcon.png", Label: "DELETE FROM GRAPH Query" },
+    { IconLink: "deleteIcon.png", Label: "DROP GRAPH Query" },
+    { IconLink: "filterIcon.png", Label: "FILTER Query" },
+    { IconLink: "optionaIcon.png", Label: "OPTIONAL  Query" },
+    { IconLink: "unionIcon.png", Label: "UNION  Query" },
+    { IconLink: "bindIcon.png", Label: "BIND  Query" },
+    { IconLink: "grouping.png", Label: "GROUP BY & COUNT  Query" },
   ];
 
   return (
