@@ -31,9 +31,7 @@ function App() {
           <textarea value={queryStructure} onChange={handleChange}></textarea>
 
           <div className="QueryActions">
-            <button >
-              Run Query
-            </button>
+            <button>Run Query</button>
             <button onClick={() => setQueryStructure("")}>Reset</button>
           </div>
         </div>
