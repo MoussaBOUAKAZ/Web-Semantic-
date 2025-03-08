@@ -4,7 +4,7 @@ import Header from "./Header";
 import SideBar from "./SideBar";
 import QueryIndex from "./QueryIndex";
 function App() {
-  const [SideBarToggle, setSideBarToggle] = useState(false);
+  const [SideBarToggle, setSideBarToggle] = useState(true);
 
   const toggleSideBar = () => {
     setSideBarToggle((prev) => !prev);
