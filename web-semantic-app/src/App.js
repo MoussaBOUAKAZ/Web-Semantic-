@@ -54,7 +54,7 @@ function App() {
         >
           <div className={`QuerySpace ${queryStructure ? "show" : ""}`}>
             <h2>Query Space</h2>
-
+            <h2>Query Space</h2><h2>Query Space</h2>
             <textarea value={queryStructure} onChange={handleChange}></textarea>
 
             <div className="QueryActions">
